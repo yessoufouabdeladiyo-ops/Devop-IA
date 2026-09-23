@@ -1,10 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#ff7c30"/>
-      <stop offset="1" stop-color="#cd4c00"/>
-    </linearGradient>
-  </defs>
-  <rect width="64" height="64" rx="16" fill="url(#g)"/>
-  <text x="32" y="42" font-family="Outfit, 'Segoe UI', Arial, sans-serif" font-size="25" font-weight="700" fill="#ffffff" text-anchor="middle">AS</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="AS — Abdel Sobou">
+  <title>Abdel Sobou — AS</title>
+  <g fill="#cd4c00">
+    <path d="M0.6 0 11.8 -28.24H17.48L28.56 0H21.92L20.04 -5.12H9L7.12 0ZM10.88 -10.24H18.2L14.56 -20.32Z" transform="translate(4.16 47.40)"/>
+    <path d="M11.2 0.44Q7.72 0.44 5.2 -0.68Q2.68 -1.8 0.64 -4.16L4.72 -8.2Q6.08 -6.6 7.72 -5.76Q9.36 -4.92 11.6 -4.92Q13.6 -4.92 14.7 -5.64Q15.8 -6.36 15.8 -7.64Q15.8 -8.96 14.84 -9.76Q13.88 -10.56 12.38 -11.1Q10.88 -11.64 9.18 -12.26Q7.48 -12.88 5.96 -13.82Q4.44 -14.76 3.5 -16.32Q2.56 -17.88 2.56 -20.36Q2.56 -22.96 3.82 -24.82Q5.08 -26.68 7.32 -27.68Q9.56 -28.68 12.48 -28.68Q15.44 -28.68 17.9 -27.62Q20.36 -26.56 21.96 -24.8L17.88 -20.76Q16.6 -22.08 15.3 -22.72Q14 -23.36 12.36 -23.36Q10.68 -23.36 9.74 -22.74Q8.8 -22.12 8.8 -20.96Q8.8 -19.72 9.74 -19Q10.68 -18.28 12.2 -17.74Q13.72 -17.2 15.42 -16.58Q17.12 -15.96 18.62 -14.98Q20.12 -14 21.08 -12.38Q22.04 -10.76 22.04 -8.2Q22.04 -4.12 19.16 -1.84Q16.28 0.44 11.2 0.44Z" transform="translate(36.52 47.40)"/>
+  </g>
+  <rect x="25" y="54" width="14" height="3" rx="1.5" fill="#ff7c30"/>
 </svg>

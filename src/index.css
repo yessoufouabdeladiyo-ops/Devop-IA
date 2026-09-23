@@ -1,5 +1,9 @@
 @import "tailwindcss";
-@import "@fortawesome/fontawesome-free/css/all.min.css";
+/* FA minimal : seul solid + brands sont utilisés (évite d'empiler
+   3× les mêmes woff2 via les faces de compat FA5/FA4) */
+@import "@fortawesome/fontawesome-free/css/fontawesome.min.css";
+@import "@fortawesome/fontawesome-free/css/solid.min.css";
+@import "@fortawesome/fontawesome-free/css/brands.min.css";
 
 /* ------------------------------------------------------------------ */
 /*  Charte graphique — Abdel Sobou                                     */

@@ -81,6 +81,11 @@ const fr = {
         title: "Accompagnement inclus",
         detail: "Après la livraison",
       },
+      {
+        icon: "fa-solid fa-medal",
+        title: "2 ans d'expérience",
+        detail: "En développement web et IA",
+      },
     ],
     contact: {
       eyebrow: "Coordonnées",
@@ -333,6 +338,27 @@ const fr = {
     note: "Une autre question en tête ?",
     cta: "Posez-la moi directement",
   },
+  testimonials: {
+    eyebrow: "Témoignages",
+    titleStart: "Ils m'ont fait",
+    titleAccent: "confiance",
+    items: [
+      {
+        icon: "fa-solid fa-star",
+        quote:
+          "Merci Abdel, grâce à ma boutique en ligne je me sens beaucoup plus visible et je ressens vraiment ma présence en ligne. Depuis 1 mois, je trouve beaucoup de clients.",
+        name: "Raodath Alao",
+        role: "Boutique en ligne (vente d'articles pour femmes)",
+      },
+      {
+        icon: "fa-solid fa-star",
+        quote:
+          "Merci Abdel pour mon site. Grâce à lui, mes clients savent tout sur moi et comment je fonctionne, sans avoir à poser trop de questions. Je suis très satisfaite.",
+        name: "Kamilath Nourou",
+        role: "Graphiste designer",
+      },
+    ],
+  },
   finalCta: {
     badge: "Disponible pour de nouveaux projets",
     title: "Un projet en tête ? Discutons-en.",
@@ -435,6 +461,11 @@ const en: Dict = {
         icon: "fa-solid fa-handshake",
         title: "Support included",
         detail: "After delivery",
+      },
+      {
+        icon: "fa-solid fa-medal",
+        title: "2 years of experience",
+        detail: "In web & AI development",
       },
     ],
     contact: {
@@ -687,6 +718,27 @@ const en: Dict = {
     note: "Another question on your mind?",
     cta: "Ask me directly",
   },
+  testimonials: {
+    eyebrow: "Testimonials",
+    titleStart: "They put their trust",
+    titleAccent: "in me",
+    items: [
+      {
+        icon: "fa-solid fa-star",
+        quote:
+          "Thank you Abdel — thanks to my online store I feel much more visible, and my online presence is really felt. For a month now, I've been finding plenty of clients.",
+        name: "Raodath Alao",
+        role: "Online store (women's items)",
+      },
+      {
+        icon: "fa-solid fa-star",
+        quote:
+          "Thank you Abdel for my website. Thanks to it, my clients know everything about me and how I work, without having to ask too many questions. I'm very satisfied.",
+        name: "Kamilath Nourou",
+        role: "Graphic designer",
+      },
+    ],
+  },
   finalCta: {
     badge: "Available for new projects",
     title: "A project in mind? Let's talk.",
@@ -786,6 +838,11 @@ const ar: Dict = {
         icon: "fa-solid fa-handshake",
         title: "مرافقة شاملة",
         detail: "بعد التسليم",
+      },
+      {
+        icon: "fa-solid fa-medal",
+        title: "سنتان من الخبرة",
+        detail: "في تطوير الويب والذكاء الاصطناعي",
       },
     ],
     contact: {
@@ -1015,6 +1072,27 @@ const ar: Dict = {
     ],
     note: "سؤال آخر في ذهنك؟",
     cta: "اطرحه عليّ مباشرة",
+  },
+  testimonials: {
+    eyebrow: "شهادات العملاء",
+    titleStart: "هؤلاء وثقوا",
+    titleAccent: "بي",
+    items: [
+      {
+        icon: "fa-solid fa-star",
+        quote:
+          "شكراً عبدل، بفضل متجري الإلكتروني أشعر أنني أكثر ظهوراً فعلاً وحسّ بوجودي على الإنترنت. منذ شهر، أصبحت أجد الكثير من العملاء.",
+        name: "Raodath Alao",
+        role: "متجر إلكتروني (بيع ملابس وإكسسوارات نسائية)",
+      },
+      {
+        icon: "fa-solid fa-star",
+        quote:
+          "شكراً عبدل على موقعي. بفضله يعرف عملائي كل شيء عني وكيف أعمل، دون الحاجة إلى طرح الكثير من الأسئلة. أنا راضية تماماً.",
+        name: "Kamilath Nourou",
+        role: "مصممة جرافيك",
+      },
+    ],
   },
   finalCta: {
     badge: "متاح لمشاريع جديدة",
