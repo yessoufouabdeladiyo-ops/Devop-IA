@@ -1,0 +1,128 @@
+@import "tailwindcss";
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+/* ------------------------------------------------------------------ */
+/*  Charte graphique — Abdel Sobou                                     */
+/*  60 % blanc · 30 % #cd4c00 (titres forts, bordures) · 10 % #ff7c30 */
+/* ------------------------------------------------------------------ */
+@theme {
+  --font-display: "Outfit", "Cairo", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Montserrat", "Cairo", ui-sans-serif, system-ui, sans-serif;
+
+  /* Accent principal — 10 % (CTA, hover) */
+  --color-flame: #ff7c30;
+  --color-flame-deep: #e96a1e;
+
+  /* Accent secondaire — 30 % (titres forts, bordures) */
+  --color-ember: #cd4c00;
+  --color-ember-deep: #a63e00;
+
+  /* Neutres chauds (texte courant) */
+  --color-ink: #261b11;
+  --color-bark: #716558;
+
+  /* Surfaces (basculent en mode sombre) */
+  --color-surface: #ffffff;
+}
+
+/* ------------------------------------------------------------------ */
+/*  Mode sombre — mêmes accents orange, fond brun très profond chaud   */
+/*  Les tokens sont inversés : tous les composants qui utilisent      */
+/*  text-ink / text-bark / text-ember / border-ember s'adaptent.      */
+/* ------------------------------------------------------------------ */
+:root.dark {
+  color-scheme: dark;
+
+  --color-flame: #ff8138;
+  --color-flame-deep: #ff9a5c;
+
+  --color-ember: #f07c42;
+  --color-ember-deep: #f99a63;
+
+  --color-ink: #f4ede4;
+  --color-bark: #b3a494;
+
+  --color-surface: #1b130d;
+}
+
+/* Surfaces littérales bg-white / border-white → surface (mode sombre) */
+.dark .bg-white {
+  background-color: var(--color-surface);
+}
+.dark .bg-white\/85 {
+  background-color: color-mix(in oklab, var(--color-surface) 85%, transparent);
+}
+.dark .bg-white\/95 {
+  background-color: color-mix(in oklab, var(--color-surface) 95%, transparent);
+}
+.dark .border-white {
+  border-color: var(--color-surface);
+}
+
+/* Colonne « Template classique » (palette stone) → neutres sombres */
+.dark .bg-stone-50 {
+  background-color: #241b13;
+}
+.dark .border-stone-200 {
+  border-color: #3b2f22;
+}
+.dark .bg-stone-200\/80 {
+  background-color: rgb(69 55 39 / 0.8);
+}
+.dark .text-stone-400 {
+  color: #93816c;
+}
+.dark .text-stone-500 {
+  color: #af9f8b;
+}
+.dark .text-stone-600 {
+  color: #d0c2b0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-surface);
+  color: var(--color-ink);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ------------------------------------------------------------------ */
+/*  RTL (arabe) — l'écriture arabe ne supporte pas l'interlettrage :   */
+/*  on neutralise les tracking-* pour préserver la ligature des lettres*/
+/* ------------------------------------------------------------------ */
+[dir="rtl"] [class*="tracking-"] {
+  letter-spacing: 0;
+}
+
+/* Micro-animation d'entrée (fade + rise) — utilisée avec la variable --d pour le délai */
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-rise {
+  opacity: 0;
+  animation: rise 0.8s cubic-bezier(0.22, 0.65, 0.3, 1) forwards;
+  animation-delay: var(--d, 0ms);
+}
+
+/* Accessibilité : respect de la réduction des mouvements */
+@media (prefers-reduced-motion: reduce) {
+  .animate-rise {
+    animation: none;
+    opacity: 1;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
