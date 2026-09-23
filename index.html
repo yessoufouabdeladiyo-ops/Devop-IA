@@ -3,15 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="https://yessoufouabdeladiyo-ops.github.io/Devop-IA/favicon.svg" />
+
+    <!-- ============ SEO ============ -->
+    <title>Abdel Sobou — Développeur Web &amp; IA Freelance | Sites sur-mesure</title>
     <meta
       name="description"
-      content="Abdel Sobou conçoit des sites 100 % sur-mesure — sites vitrines, e-commerce, landing pages, tunnels de vente et applications web — propulsés par l'IA et pensés pour l'expérience utilisateur. Zéro template, que du vrai."
+      content="Développeur web freelance spécialisé en IA et UX design. Sites vitrines, e-commerce, landing pages et applications web 100% sur-mesure, jamais de template."
     />
+    <link rel="canonical" href="https://yessoufouabdeladiyo-ops.github.io/Devop-IA/" />
+    <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#ff7c30" />
-    <title>Abdel Sobou — Développeur Web Freelance · IA &amp; UX Design</title>
+
+    <!-- ============ Open Graph (partage réseaux sociaux) ============ -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Abdel Sobou" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:locale:alternate" content="ar_AR" />
+    <meta
+      property="og:title"
+      content="Abdel Sobou — Développeur Web &amp; IA Freelance | Sites sur-mesure"
+    />
+    <meta
+      property="og:description"
+      content="Développeur web freelance spécialisé en IA et UX design. Sites vitrines, e-commerce, landing pages et applications web 100% sur-mesure, jamais de template."
+    />
+    <meta property="og:url" content="https://yessoufouabdeladiyo-ops.github.io/Devop-IA/" />
+    <meta property="og:image" content="https://yessoufouabdeladiyo-ops.github.io/Devop-IA/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Abdel Sobou — Développeur Web & IA Freelance" />
+
+    <!-- ============ Twitter Card ============ -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Abdel Sobou — Développeur Web &amp; IA Freelance | Sites sur-mesure"
+    />
+    <meta
+      name="twitter:description"
+      content="Développeur web freelance spécialisé en IA et UX design. Sites vitrines, e-commerce, landing pages et applications web 100% sur-mesure, jamais de template."
+    />
+    <meta name="twitter:image" content="https://yessoufouabdeladiyo-ops.github.io/Devop-IA/og-image.jpg" />
+    <meta name="twitter:image:alt" content="Abdel Sobou — Développeur Web & IA Freelance" />
+
     <script>
-      /* Applique langue + thème persistés AVANT le premier rendu (aucun flash) */
+      /* Applique langue + thème persistés AVANT le premier rendu (aucun flash)
+         — <html lang> est aligné sur la langue active : fr (défaut) / en / ar */
       try {
         var l = window.localStorage.getItem("abdelsobou-lang");
         if (l === "AR") {
@@ -19,6 +58,10 @@
           document.documentElement.dir = "rtl";
         } else if (l === "EN") {
           document.documentElement.lang = "en";
+          document.documentElement.dir = "ltr";
+        } else {
+          document.documentElement.lang = "fr";
+          document.documentElement.dir = "ltr";
         }
         var t = window.localStorage.getItem("abdelsobou-theme");
         if (

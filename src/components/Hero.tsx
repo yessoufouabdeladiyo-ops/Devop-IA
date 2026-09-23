@@ -118,11 +118,15 @@ export default function Hero() {
 
             {/* Cadre photo */}
             <div className="relative overflow-hidden rounded-[28px] border border-ember/10 bg-white shadow-[0_36px_70px_-32px_rgba(205,76,0,0.4)]">
+              {/* LCP : eager + fetchpriority high — dimensions intrinsèques pour éviter les CLS */}
               <img
                 src="https://i.imgur.com/yjV92qJ.jpeg"
                 alt={T.hero.photoAlt}
+                width={540}
+                height={500}
                 className="aspect-[4/5] w-full object-cover"
                 loading="eager"
+                fetchPriority="high"
                 decoding="async"
                 referrerPolicy="no-referrer"
               />

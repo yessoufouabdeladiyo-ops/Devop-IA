@@ -10,10 +10,20 @@ const __dirname = path.dirname(__filename);
 
 // https://vite.dev/config/
 export default defineConfig({
+  // GitHub Pages project site : /Devop-IA/ — local dev reste en /
+  base: process.env.GITHUB_ACTIONS ? "/Devop-IA/" : "/",
   plugins: [react(), tailwindcss(), viteSingleFile()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),
     },
+  },
+  server: {
+    host: "0.0.0.0",
+    allowedHosts: true as const, // accepte l'hôte de prévisualisation Arena (*.e2b.app)
+  },
+  preview: {
+    host: "0.0.0.0",
+    allowedHosts: true as const,
   },
 });

@@ -7,6 +7,7 @@ import WhyCustom from "./components/WhyCustom";
 import Audience from "./components/Audience";
 import Process from "./components/Process";
 import Faq from "./components/Faq";
+import Testimonials from "./components/Testimonials";
 import FinalCta from "./components/FinalCta";
 import Footer from "./components/Footer";
 
@@ -14,7 +15,8 @@ import Footer from "./components/Footer";
  * Portfolio — Abdel Sobou Adiyo Yessoufou
  * Header sticky · Hero (#accueil) · À propos (#a-propos) · Services (#services) ·
  * Pourquoi pas un template (#pourquoi-sur-mesure) · Pour qui ? (#pour-qui) ·
- * Méthode de travail (#methode) · FAQ (#faq) · CTA final (#contact) · Footer.
+ * Méthode de travail (#methode) · FAQ (#faq) · Ils m'ont fait confiance
+ * (#temoignages) · CTA final (#contact) · Footer.
  * i18n FR (défaut) / EN / AR — mise en page entièrement en miroir (RTL) pour l'arabe.
  */
 export default function App() {
@@ -29,8 +31,9 @@ export default function App() {
           <WhyCustom />
           <Audience />
           <Process />
-          <Faq />
-          <FinalCta />
+        <Faq />
+        <Testimonials />
+        <FinalCta />
         </main>
         <Footer />
       </div>
